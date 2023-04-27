@@ -13,3 +13,16 @@ class APIRequestLog(models.Model):
 
     class Meta:
         ordering = ['-timestamp']
+
+
+class ModelChangeLog(models.Model):
+    # user_id = models.BigIntegerField(null=False, blank=True, db_index=True)
+    model_name = models.CharField(max_length=132)
+    action_type = models.CharField(max_length=16, null=True, blank=True)
+    instance_pk = models.IntegerField(null=True, blank=True)
+    changes = models.JSONField(null=True, blank=True)
+
+    def __str__(self):
+        return f"actionType: {self.action_type} -- Model: {self.model_name}"
+
+
