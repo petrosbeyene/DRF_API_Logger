@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: peter-sample-dfr-app
+Version: 1.0.0
+Summary: Logs request and responses to the database
+Home-page: https://github.com/petrosbeyene/DRF_API_Logger
+Author: Petros
+Author-email: petrosbeyene611@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+==================================================
+Django Request-Response and Model Change Logger
+==================================================
+
+Django REST framework logger is an application to log requests/responses and model changes to the database.
+
+Quick Start
+==============
+
+1. Add drf_request_logger to your project just like the following::
+    INSTALLED_APPS = [
+        ......
+        "drf_request_logger"
+    ]
+
+

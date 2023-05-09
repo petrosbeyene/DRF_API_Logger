@@ -1,0 +1,7 @@
+Django>=3.2.0
+pytz>=2021.1
+
+[dev]
+black
+flake8
+isort
